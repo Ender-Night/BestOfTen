@@ -15,7 +15,9 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1600px;
     background: url(../img/wallpaper.png);
+    background-size: cover;
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 
@@ -111,13 +113,13 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 768px)
+@media (max-width: 950px)
 {
     .menu-toggle {
         display: block;
         width: 40px;
         height: 40px;
-        margin: 10px;
+        margin: 10px 10px 15px 10px;
         float: right;
         cursor: pointer;
         text-align: center;
@@ -191,7 +193,8 @@ nav ul li a:hover {
 
 .div-content .cards {
     z-index: -1;
-    width: 60vh;
+    width: 40vh;
+    min-width: 400px;
     padding: 20px;
     display: flex;
     flex-direction: column;
